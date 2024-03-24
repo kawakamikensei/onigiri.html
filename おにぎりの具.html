@@ -1,0 +1,28 @@
+<head><title>今日のおにぎりの具</title></head>
+<button input type="button" value="おにぎりの具" id="nakami" onClick="onigiri()">おにぎりの具</button>
+<style>
+button {
+    font-size: 100px;
+    width: 13.5em;
+    height: 3em;
+    color: red;
+}
+</style>
+<script type="text/javascript">
+function onigiri() {
+	rand = Math.floor(Math.random()*12);
+	if (rand == 0) msg = "鮭";
+	if (rand == 1) msg = "明太子";
+	if (rand == 2) msg = "高菜";
+	if (rand == 3) msg = "塩";
+	if (rand == 4) msg = "エビマヨ";
+    if (rand == 5) msg = "昆布";
+    if (rand == 6) msg = "いくら";
+    if (rand == 7) msg = "ツナマヨ";
+    if (rand == 8) msg = "おかか";
+    if (rand == 9) msg = "梅";
+    if (rand == 10) msg = "ネギトロ";
+    if (rand == 11) msg = "海老天";
+	alert(msg);
+}
+</script>
